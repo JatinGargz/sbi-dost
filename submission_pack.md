@@ -101,24 +101,6 @@ Use the layout below to construct your presentation slides (PPTX/PDF):
 *   **Key Points:**
     *   Fully functional Vite/React prototype showcasing all workflows.
     *   Responsive tabbed dashboard incorporating Overview, AI Assistant, Mandate Auditor, and Budgets.
-    *   **Repository URL:** *[Insert your Github Link]*
-    *   **Demo Video:** *[Insert your 3-Minute Demo Link]*
+    *   **Repository URL:** https://github.com/JatinGargz/sbi-dost
+    *   **Interactive Tour:** https://app.supademo.com/demo/cmr3tms0u0emvqmkqw1v0gnte?utm_source=link
 
----
-
-## Part 3: 3-Minute Demo Video Script
-
-Follow this script to record a professional screencast of the React app:
-
-*   **0:00 - 0:30 (Introduction):**
-    *   *Visual:* Show the **Overview tab** of the prototype.
-    *   *Audio:* "Hello. Today, we are presenting SBI Dost, our entry for the GFF 2026 Hackathon under the Digital Engagement pillar. SBI Dost is an Agentic AI personal finance advisor. Here, on the overview page, you see the customer's balance, active mandates, and a warning bar showing that 94% of the dining budget is consumed."
-*   **0:00 - 1:15 (Leakage Detection Workflow):**
-    *   *Visual:* Switch to the **Mandate Auditor tab**. Point out the active subscriptions and their idle days. Click **Block Mandate** on Streaming Premium.
-    *   *Audio:* "Let's run a mandate audit. Here, the agent scans recurring mandates and detects that Streaming Premium has been unused for 120 days. The agent consults SBI Policy S-812 and blocks the mandate. In the AI Assistant tab, you can see the agent's thoughts, tools, and actions streaming live, and a toast notifies us that the mandate is blocked."
-*   **1:15 - 2:30 (Rent Transfer & RAG Policy Limits):**
-    *   *Visual:* Go to the **AI Assistant tab**, click **Settle Rent**. Show the console terminal streaming thoughts, RAG policy checks, and beneficiary checks. Highlight the **Human-in-the-Loop Card** appearing. Click **Approve & Execute**.
-    *   *Audio:* "Now, let's ask the agent to settle rent. The agent checks our balance and queries SBI's digital transfer policy L-204 using RAG. It recognizes that because the transfer exceeds 10,000 INR, OTP validation is required. An authorization prompt appears. We click approve, the agent transfers the funds, and our balance on the header decreases instantly."
-*   **2:30 - 3:00 (Summary & Business Value):**
-    *   *Visual:* Show the **Budgets & Goals tab** with the savings targets and asset yield recommendations.
-    *   *Audio:* "SBI Dost moves digital banking from a passive transaction record to a proactive, automated wealth partner. It increases SBI's cross-sell potential and reduces operational support logs. The code is open-source and ready for deployment. Thank you."
