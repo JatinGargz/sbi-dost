@@ -1,0 +1,237 @@
+:root {
+  /* Hybrid Warm Peach-Cream Corporate HSL Colors */
+  --bg-main: hsl(20, 45%, 97.5%);            /* Soft, Professional Warm Peach-Cream Background (#fcf6f2) */
+  --bg-card: hsl(20, 60%, 99.5%);            /* Pure Eggshell Warm White for Content Cards (#fffbf9) */
+  --bg-card-hover: hsl(20, 60%, 98.5%);      
+  --bg-panel: hsl(20, 30%, 95%);             /* Warm Muted Sand-Gray for interior panels (#f3e7df) */
+  
+  --border-light: hsl(20, 24%, 90%);         /* Muted Warm Peach-Border (#ebdcd3) */
+  --border-hover: hsl(20, 25%, 82%);
+  
+  /* Dark Contrast Accents (Header & Console Panels) */
+  --bg-dark-header: hsl(222, 47%, 11%);      /* Deep Slate Navy (#0f172a) */
+  --bg-dark-console: hsl(222, 47%, 7%);      /* Dark Slate Black (#090d16) */
+  
+  --primary-sbi: hsl(210, 95%, 35%);         /* SBI Corporate Blue */
+  --primary-sbi-glow: hsla(210, 95%, 35%, 0.08);
+  --secondary-sbi: hsl(215, 60%, 45%);
+  
+  /* Warm-Charcoal Text Tones */
+  --text-primary: hsl(20, 25%, 15%);         /* Deep Warm Charcoal for premium corporate body text (#2b221f) */
+  --text-secondary: hsl(20, 15%, 45%);       /* Warm Muted Gray-Brown (#7b6c65) */
+  --text-muted: hsl(20, 12%, 65%);           /* Light Warm Gray (#ab9d96) */
+  
+  /* Console Text Tones */
+  --console-text: hsl(210, 40%, 95%);
+  --console-text-secondary: hsl(215, 16%, 70%);
+  
+  /* Agent reasoning color accents */
+  --agent-thought: hsl(142, 60%, 42%);       /* Muted Emerald Green */
+  --agent-thought-glow: hsla(142, 60%, 42%, 0.08);
+  --agent-action: hsl(270, 50%, 55%);        /* Muted Corporate Purple */
+  --agent-action-glow: hsla(270, 50%, 55%, 0.08);
+  --agent-observation: hsl(28, 70%, 45%);    /* Muted Copper */
+  
+  --success: hsl(142, 70%, 35%);
+  --success-bg: hsl(142, 70%, 95%);
+  --danger: hsl(346, 75%, 48%);
+  --danger-bg: hsl(346, 75%, 96.5%);
+  
+  --font-display: 'Outfit', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --shadow-premium: 0 4px 6px -1px rgba(43, 34, 31, 0.04), 0 2px 4px -1px rgba(43, 34, 31, 0.02);
+  --shadow-hover: 0 10px 15px -3px rgba(43, 34, 31, 0.06), 0 4px 6px -2px rgba(43, 34, 31, 0.03);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(43, 34, 31, 0.15) transparent;
+}
+
+body {
+  background-color: var(--bg-main);
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(20, 100%, 90%, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(210, 100%, 90%, 0.08) 0px, transparent 50%);
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Premium Panel Styling */
+.glass-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  box-shadow: var(--shadow-premium);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-1px);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(43, 34, 31, 0.12);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(43, 34, 31, 0.25);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.1; }
+  50% { opacity: 0.2; }
+}
+
+@keyframes borderPulse {
+  50% { border-color: var(--primary-sbi); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Muted Gradient Corporate Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-sbi), hsl(210, 90%, 30%));
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(43, 34, 31, 0.08);
+}
+
+.btn-primary:hover {
+  transform: translateY(-0.5px);
+  box-shadow: 0 4px 8px rgba(43, 34, 31, 0.12);
+}
+
+.btn-primary:active {
+  transform: translateY(0.5px);
+}
+
+.btn-secondary {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  color: var(--text-primary);
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.btn-secondary:hover {
+  background: var(--bg-panel);
+  border-color: var(--border-hover);
+}
+
+/* Header Tab Buttons (Styled for Dark Header Bar) */
+.tab-btn {
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: var(--console-text-secondary);
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 18px 24px;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  color: #ffffff;
+}
+
+.tab-btn.active {
+  border-bottom-color: hsl(200, 100%, 55%);
+  color: #ffffff;
+}
+
+/* Badges */
+.badge {
+  border-radius: 5px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 3px 6px;
+  text-transform: uppercase;
+}
+
+.badge-sbi {
+  background: rgba(0, 102, 204, 0.08);
+  border: 1px solid rgba(0, 102, 204, 0.15);
+  color: var(--primary-sbi);
+}
+
+.badge-success {
+  background: var(--success-bg);
+  border: 1px solid rgba(142, 70, 40, 0.1);
+  color: var(--success);
+}
+
+.badge-danger {
+  background: var(--danger-bg);
+  border: 1px solid rgba(346, 75, 50, 0.1);
+  color: var(--danger);
+}
+
+/* Tables */
+.corporate-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.corporate-table th {
+  border-bottom: 2px solid var(--border-light);
+  color: var(--text-secondary);
+  font-weight: 600;
+  padding: 12px 16px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.corporate-table td {
+  border-bottom: 1px solid var(--border-light);
+  padding: 14px 16px;
+  color: var(--text-primary);
+}
+
+.corporate-table tr:hover td {
+  background: var(--bg-card-hover);
+}
