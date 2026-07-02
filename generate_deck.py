@@ -186,8 +186,13 @@ add_text_box(slide, Inches(1), Inches(5.3), Inches(6), Inches(0.4),
              font_size=12, color=RGBColor(100, 116, 139))
 
 # Team info
-add_text_box(slide, Inches(1), Inches(6.1), Inches(6), Inches(0.4),
+add_text_box(slide, Inches(1), Inches(5.8), Inches(6), Inches(0.4),
              "Team: Jatin Garg", font_size=13, color=WHITE, bold=True)
+
+# Live links
+add_text_box(slide, Inches(1), Inches(6.3), Inches(10), Inches(0.4),
+             "Live Demo: sbi-agentic-banking-hackathon.vercel.app   |   GitHub: github.com/JatinGargz/sbi-dost",
+             font_size=11, color=LIGHT_BLUE)
 
 add_footer_bar(slide)
 
@@ -624,14 +629,18 @@ add_text_box(slide, Inches(3), Inches(2.8), Inches(8), Inches(0.6),
 
 add_shape(slide, Inches(5.5), Inches(3.7), Inches(2.5), Inches(0.04), fill_color=SBI_BLUE)
 
-add_text_box(slide, Inches(3), Inches(4.2), Inches(8), Inches(0.5),
-             "Prototype Live  •  GitHub Repository Ready  •  3-Minute Demo Available",
+add_text_box(slide, Inches(3), Inches(4.0), Inches(8), Inches(0.5),
+             "Live Demo: sbi-agentic-banking-hackathon.vercel.app",
+             font_size=16, color=LIGHT_BLUE, alignment=PP_ALIGN.CENTER, bold=True)
+
+add_text_box(slide, Inches(3), Inches(4.5), Inches(8), Inches(0.4),
+             "GitHub: github.com/JatinGargz/sbi-dost",
              font_size=14, color=RGBColor(148, 163, 184), alignment=PP_ALIGN.CENTER)
 
 # Contact info
-add_text_box(slide, Inches(3), Inches(5.2), Inches(8), Inches(0.4),
+add_text_box(slide, Inches(3), Inches(5.3), Inches(8), Inches(0.4),
              "Team: Jatin Garg", font_size=16, bold=True, color=WHITE, alignment=PP_ALIGN.CENTER)
-add_text_box(slide, Inches(3), Inches(5.7), Inches(8), Inches(0.4),
+add_text_box(slide, Inches(3), Inches(5.8), Inches(8), Inches(0.4),
              "Pillar: Digital Engagement  •  Theme: Agentic AI & Emerging Tech",
              font_size=12, color=RGBColor(100, 116, 139), alignment=PP_ALIGN.CENTER)
 
@@ -642,5 +651,5 @@ add_footer_bar(slide)
 # ==========================================
 output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "SBI_Dost_Idea_Deck.pptx")
 prs.save(output_path)
-print(f"✅ Presentation saved to: {output_path}")
-print(f"   Total slides: {len(prs.slides)}")
+print(f"Presentation saved to: {output_path}")
+print(f"Total slides: {len(prs.slides)}")
