@@ -17,6 +17,11 @@ This document contains the exact content structured for the **HackCulture Submis
 *(Enter your team details here, e.g.,)*
 - Jatin Garg (Developer & Architect) - [Your Organization/University]
 
+### Project Resources
+- **Live Demo Website:** https://sbi-agentic-banking-hackathon.vercel.app
+- **Interactive Walkthrough (Supademo):** https://app.supademo.com/demo/cmr3tms0u0emvqmkqw1v0gnte?utm_source=link
+- **GitHub Code Repository:** https://github.com/JatinGargz/sbi-dost
+
 ---
 
 ### 5. Brief description of the idea (Form Field)
