@@ -191,7 +191,7 @@ add_text_box(slide, Inches(1), Inches(5.8), Inches(6), Inches(0.4),
 
 # Live links
 add_text_box(slide, Inches(1), Inches(6.3), Inches(11.5), Inches(0.4),
-             "Live Demo: sbi-agentic-banking-hackathon.vercel.app   |   Interactive Tour: supademo.com/demo/cmr3tms0u0emvqmkqw1v0gnte",
+             "Demo Video: drive.google.com/file/d/1ap6l   |   Live Site: sbi-agentic-banking-hackathon.vercel.app   |   GitHub: github.com/JatinGargz/sbi-dost",
              font_size=10, color=LIGHT_BLUE)
 
 add_footer_bar(slide)
@@ -585,7 +585,7 @@ add_text_box(slide, Inches(0.8), Inches(1.0), Inches(11), Inches(0.7),
              "Fully Functional Interactive Dashboard — Ready for Phase 2",
              font_size=28, bold=True, color=CHARCOAL)
 add_text_box(slide, Inches(0.8), Inches(1.5), Inches(11), Inches(0.4),
-             "👉 Interactive Guided Walkthrough: https://app.supademo.com/demo/cmr3tms0u0emvqmkqw1v0gnte",
+             "Demo Video: drive.google.com/file/d/1ap6l   |   Interactive Tour: supademo.com/demo/cmr3tms0u0emvqmkqw1v0gnte",
              font_size=11, color=SBI_BLUE, bold=True)
 
 # 4 tab screenshots as placeholder cards
@@ -633,11 +633,11 @@ add_text_box(slide, Inches(3), Inches(2.8), Inches(8), Inches(0.6),
 add_shape(slide, Inches(5.5), Inches(3.7), Inches(2.5), Inches(0.04), fill_color=SBI_BLUE)
 
 add_text_box(slide, Inches(3), Inches(4.0), Inches(8), Inches(0.5),
-             "Live Demo: sbi-agentic-banking-hackathon.vercel.app",
+             "Demo Video: drive.google.com/file/d/1ap6l",
              font_size=16, color=LIGHT_BLUE, alignment=PP_ALIGN.CENTER, bold=True)
 
 add_text_box(slide, Inches(3), Inches(4.5), Inches(8), Inches(0.4),
-             "Interactive Tour: supademo.com/demo/cmr3tms0u0emvqmkqw1v0gnte",
+             "Live Site: sbi-agentic-banking-hackathon.vercel.app",
              font_size=14, color=WHITE, alignment=PP_ALIGN.CENTER, bold=True)
 
 add_text_box(slide, Inches(3), Inches(5.0), Inches(8), Inches(0.4),
